@@ -82,7 +82,7 @@ void Epoll::my_epoll_wait(int listen_fd, int max_events, int timeout) {
     {
         for(auto &req : req_data)
         {
-            if(thread_pool::threadpool_add(req) < 0)
+            if(ThreadPool::threadpool_add(req) < 0)
             {
                 /// 线程池满了或者关闭了等原因，抛弃本次监听到的请求。
                 break;
@@ -93,7 +93,7 @@ void Epoll::my_epoll_wait(int listen_fd, int max_events, int timeout) {
     timer_manager.handle_expired_event();
 }
 
-void Epoll::acceptConnection(int listenfd, int epoll_fd, int events_num, const std::string path) {
+void Epoll::acceptConnection(int listenfd, int epoll_fd, const std::string path) {
     struct sockaddr_in client_addr;
     memset(&client_addr, 0, sizeof(struct sockaddr_in));
     socklen_t client_addr_len = sizeof client_addr;
@@ -158,8 +158,9 @@ vector<Epoll::SP_ReqData> Epoll::getEventsRequest(int listen_fd, int events_num,
             if(events[i].events & EPOLLERR or events[i].events & EPOLLHUP)
             {
                 printf("error event\n");
+
                 if(fd2req[fd])
-                    fd2req->seperateTimer();
+                    fd2req[fd]->seperateTimer();
                 fd2req[fd].reset();
                 continue;
             }
