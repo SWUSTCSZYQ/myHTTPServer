@@ -1,12 +1,12 @@
 #include "RequestData.h"
 #include "Epoll.h"
-#include "threadpool.h"
+#include "Threadpool.h"
 #include "util.h"
 #include <sys/epoll.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <vector>
 #include <unistd.h>
 #include <memory>
@@ -68,8 +68,6 @@ int socket_bind_listen(int port)
 
 int main()
 {
-    LOG << "yingyingying";
-    LOG << 654 << 3.2 << 0 << string("fg") << true;
 #ifndef _PTHREADS
     LOG << "_PTHREADS is not defined !";
 #endif
@@ -81,10 +79,13 @@ int main()
     }
     if (ThreadPool::threadpool_create(THREADPOOL_THREAD_NUM, QUEUE_SIZE) < 0)
     {
-        printf("Threadpool create failed\n");
+        printf("ThreadPool create failed\n");
+        LOG << "Start threadPool failed";
         return 1;
     }
+    LOG << "Start threadPool include " << THREADPOOL_THREAD_NUM << "threads";
     int listen_fd = socket_bind_listen(PORT);
+    LOG << "start listen " << PORT << "port number";
     if (listen_fd < 0)
     {
         perror("socket bind failed");
@@ -107,7 +108,6 @@ int main()
     {
         //sleep(10);
         Epoll::my_epoll_wait(listen_fd, MAXEVENTS, -1);
-
         //ThreadPool::threadpool_destroy();
         //break;
     }

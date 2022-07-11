@@ -2,10 +2,10 @@
 // Created by zyq on 7/8/22.
 //
 
-#include "context.h"
+#include "Context.h"
 #include "util.h"
 
-void context::String(int code) {
+void Context::String(int code) {
     switch (code) {
         case 404:
         {
@@ -15,6 +15,6 @@ void context::String(int code) {
     }
 }
 
-context::context(int connFd_, std::string &method_, std::string &path_, int statesCode_)
+Context::Context(int connFd_, std::string &method_, std::string &path_, int statesCode_)
     :connFd(connFd_), method(method_), path(method_), statesCode(statesCode_)
 {}

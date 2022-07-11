@@ -8,8 +8,8 @@
 #include <cstdlib>
 #include <string>
 
-ssize_t readn(int fd, void *buff, size_t n);
-ssize_t readn(int fd, std::string &inBuffer);
+ssize_t readN(int fd, void *buff, size_t n);
+ssize_t readN(int fd, std::string &inBuffer);
 ssize_t writen(int fd, void *buff, size_t n);
 ssize_t writen(int fd, std::string &sBuff);
 void handle_for_sigpipe();

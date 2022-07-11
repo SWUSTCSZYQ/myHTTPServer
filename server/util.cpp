@@ -10,7 +10,7 @@
 #include <cstring>
 
 const int MAX_BUFF = 4096;
-ssize_t readn(int fd, void*buff, size_t n)
+ssize_t readN(int fd, void*buff, size_t n)
 {
     size_t nLeft = n;
     ssize_t nRead = 0, readSum = 0;
@@ -33,7 +33,7 @@ ssize_t readn(int fd, void*buff, size_t n)
     return readSum;
 }
 
-ssize_t readn(int fd, std::string &inBuffer)
+ssize_t readN(int fd, std::string &inBuffer)
 {
     ssize_t nRead = 0, readSum = 0;
     while(true)

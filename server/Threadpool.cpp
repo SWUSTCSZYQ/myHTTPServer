@@ -2,7 +2,8 @@
 // Created by zyq on 7/4/22.
 //
 
-#include "threadpool.h"
+#include "Threadpool.h"
+#include "Logging.h"
 
 pthread_mutex_t ThreadPool::lock = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t ThreadPool::notify = PTHREAD_COND_INITIALIZER;
@@ -81,7 +82,7 @@ int ThreadPool::threadpool_add(std::shared_ptr<void> args, std::function<void(st
         queue[tail].args = args;
         tail = (tail + 1) % queue_size;
         ++count;
-
+        LOG << "add a new task, total task number = " << count;
         if(pthread_cond_signal(&notify) != 0)
         {
             err = THREADPOOL_LOCK_FAILURE;
@@ -160,10 +161,12 @@ void *ThreadPool::threadpool_thread(void *args) {
         queue[head].args.reset();
         head = (head + 1) % queue_size;
         --count;
+        LOG << "handle a task, total task number = " << count;
         pthread_mutex_unlock(&lock);
         (task.fun)(task.args);
     }
     --started;
+
     pthread_mutex_unlock(&lock);
     printf("This threadpool thread finishs!\n");
     pthread_exit(nullptr);

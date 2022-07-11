@@ -7,16 +7,16 @@
 
 #include<string>
 
-class web {
+class Web {
 public:
-    typedef void(*handler)(void);
+    typedef void(*handler)();
 public:
     void init();
     void GET(std::string, handler);
     void POST(std::string, handler);
 
 private:
-    void addRoute(std::string type, std::string handler, handler);
+    //void addRoute(std::string type, std::string handler, handler);
 };
 
 

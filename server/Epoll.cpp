@@ -4,17 +4,16 @@
 
 #include "Epoll.h"
 #include "util.h"
-#include "threadpool.h"
+#include "Threadpool.h"
 #include <sys/epoll.h>
-#include <cerrno>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <arpa/inet.h>
 #include <iostream>
 #include <cstring>
 #include <queue>
 #include <deque>
 #include <unistd.h>
+#include "Logging.h"
 
 using namespace std;
 
@@ -101,7 +100,6 @@ void Epoll::acceptConnection(int listenfd, int epoll_fd, const std::string path)
     while((accept_fd = accept(listenfd, (struct sockaddr*)&client_addr, &client_addr_len)) > 0)
     {
         //todo:日志输出地址和端口号
-
         /*
         // TCP的保活机制默认是关闭的
         int optval = 0;
@@ -113,6 +111,7 @@ void Epoll::acceptConnection(int listenfd, int epoll_fd, const std::string path)
         // 限制服务器的最大并发连接数
         if(accept_fd >= MAXFDS)
         {
+            LOG << "refused this connection, connection pool is fulled";
             close(accept_fd);
             continue;
         }
@@ -124,7 +123,7 @@ void Epoll::acceptConnection(int listenfd, int epoll_fd, const std::string path)
             perror("set nonBlock failed");
             return;
         }
-
+        LOG << "get a new connection, ip = " << client_addr.sin_addr.s_addr << " port = " << client_addr.sin_port;
         SP_ReqData req_info(new RequestData(epoll_fd, accept_fd, path));
         /// 文件描述符可以读，边缘触发(Edge Triggered)模式，保证一个socket连接在任一时刻只被一个线程处理
         __uint32_t _epoll_event = EPOLLIN | EPOLLET | EPOLLONESHOT;

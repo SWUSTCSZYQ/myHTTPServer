@@ -4,13 +4,9 @@
 
 #include "Timer.h"
 #include "Epoll.h"
-#include <unordered_map>
-#include <string>
 #include <sys/time.h>
 #include <unistd.h>
 #include <deque>
-#include <queue>
-#include <iostream>
 using namespace std;
 
 TimerNode::TimerNode(TimerNode::SP_ReqData _request_data, int timeout)

@@ -11,10 +11,10 @@
 
 
 
-class context {
+class Context {
 public:
-    context(int connFd_, std::string& method_, std::string& path_, int statesCode_);
-    ~context() = default;
+    Context(int connFd_, std::string& method_, std::string& path_, int statesCode_);
+    ~Context() = default;
     void setFd(int fd_){connFd = fd_;}
     int getFd() const{return connFd;}
     std::string& getPath(){return path;}

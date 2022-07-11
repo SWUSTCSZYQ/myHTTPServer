@@ -9,17 +9,17 @@
 #include <vector>
 #include <string>
 #include "Trie.h"
-#include "context.h"
+#include "Context.h"
 
-class router {
+class Router {
 public:
-    typedef void(*handler)(context*);
+    typedef void(*handler)(Context*);
     using umpss = std::unordered_map<std::string, std::string>;
 public:
-    router() = default;
+    Router() = default;
     void addRoute(std::string& method, std::string& pattern, handler HandlerFunc);
     std::pair<Trie*, umpss> getRoute(std::string& method, std::string& path);
-    void handle(context* c);
+    void handle(Context* c);
 private:
     std::vector<std::string> parsePattern(std::string& pattern);
     std::string join(std::vector<std::string>arr, std::string str);

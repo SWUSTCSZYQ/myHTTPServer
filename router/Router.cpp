@@ -2,9 +2,9 @@
 // Created by zyq on 7/7/22.
 //
 
-#include "router.h"
+#include "Router.h"
 
-void router::addRoute(std::string &method, std::string& pattern, router::handler HandlerFunc) {
+void Router::addRoute(std::string &method, std::string& pattern, Router::handler HandlerFunc) {
     auto parts = parsePattern(pattern);
     std::string key = method + "-" + pattern;
     if(roots.find(key) == roots.end())
@@ -15,7 +15,7 @@ void router::addRoute(std::string &method, std::string& pattern, router::handler
     handlers[key] = HandlerFunc;
 }
 
-std::pair<Trie *, router::umpss> router::getRoute(std::string& method, std::string& path) {
+std::pair<Trie *, Router::umpss> Router::getRoute(std::string& method, std::string& path) {
     auto searchParts = parsePattern(path);
     umpss params;
     if(roots.find(method) == roots.end())
@@ -43,7 +43,7 @@ std::pair<Trie *, router::umpss> router::getRoute(std::string& method, std::stri
     return std::pair<Trie*, umpss>(nullptr, params);
 }
 
-void router::handle(context* c) {
+void Router::handle(Context* c) {
     auto res = getRoute(c->getMethod(), c->getPath());
     if(res.first != nullptr)
     {
@@ -57,7 +57,7 @@ void router::handle(context* c) {
     }
 }
 
-std::vector<std::string> router::parsePattern(std::string& pattern) {
+std::vector<std::string> Router::parsePattern(std::string& pattern) {
     auto vs = split(pattern, '/');
     std::vector<std::string>parts;
     for(auto item : vs)
@@ -71,7 +71,7 @@ std::vector<std::string> router::parsePattern(std::string& pattern) {
     return parts;
 }
 
-std::string router::join(std::vector<std::string> arr, std::string str) {
+std::string Router::join(std::vector<std::string> arr, std::string str) {
     if(arr.empty())return "";
     std::string ans = "";
     for(int i = 0; i < arr.size(); i++)
@@ -81,6 +81,6 @@ std::string router::join(std::vector<std::string> arr, std::string str) {
     return ans;
 }
 
-std::vector<std::string> router::split(std::string s, char ch) {
+std::vector<std::string> Router::split(std::string s, char ch) {
     return std::vector<std::string>();
 }
