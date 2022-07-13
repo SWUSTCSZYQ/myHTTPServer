@@ -3,6 +3,7 @@
 //
 
 #include "Router.h"
+#include <string>
 
 void Router::addRoute(std::string &method, std::string& pattern, Router::handler HandlerFunc) {
     auto parts = parsePattern(pattern);
@@ -82,5 +83,13 @@ std::string Router::join(std::vector<std::string> arr, std::string str) {
 }
 
 std::vector<std::string> Router::split(std::string s, char ch) {
-    return std::vector<std::string>();
+    std::vector<std::string>ans;
+    std::string::size_type pos;
+    while((pos = s.find(ch, 0)) != std::string::npos)
+    {
+        ans.push_back(s.substr(0, pos));
+        s = s.substr(pos + 1);
+    }
+    if(s != "")ans.push_back(s);
+    return ans;
 }

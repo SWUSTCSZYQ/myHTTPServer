@@ -96,7 +96,7 @@ void RequestData::setFd(int _fd) {
 void RequestData::handleRead()
 {
     do {
-        int read_num = readn(fd, inBuffer);
+        int read_num = readN(fd, inBuffer);
         if(read_num < 0)
         {
             perror("1");

@@ -23,7 +23,7 @@ public:
 private:
     std::vector<std::string> parsePattern(std::string& pattern);
     std::string join(std::vector<std::string>arr, std::string str);
-    std::vector<std::string>split(std::string s, char ch);
+    static std::vector<std::string>split(std::string s, char ch);
 
 private:
     std::unordered_map<std::string, Trie*>roots;
