@@ -11,9 +11,13 @@
 
 class Cache {
 public:
-    Cache() = default;
+    explicit Cache(int cap);
     ~Cache();
+
+    void add(std::string key, std::string value);
+    std::string get(std::string);
 private:
+    int cacheBytes;
     LeastRecentlyUsed<std::string, std::string>lru;
     MutexLock mutex_;
 };
