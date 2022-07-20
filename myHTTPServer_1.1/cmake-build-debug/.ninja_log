@@ -1,0 +1,20 @@
+# ninja log v5
+0	63	1658301695482038997	build.ninja	dbb3b46fab9a3001
+13	363	1658301695862027881	CMakeFiles/myHTTPServer_1_1.dir/tools/CountDownLatch.cpp.o	65b6d516b82c52d6
+18	390	1658301695870027648	CMakeFiles/myHTTPServer_1_1.dir/utils.cpp.o	a840c65f9900b02
+5	1738	1658301697237987630	CMakeFiles/myHTTPServer_1_1.dir/Epoll.cpp.o	ff3eaad74f7f5d9b
+391	1757	1658301697253987161	CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogStream.cpp.o	5cddc64d1dda8bc7
+8	1923	1658301697421982247	CMakeFiles/myHTTPServer_1_1.dir/Timer.cpp.o	a2e2fd20c0fdf798
+1	2193	1658301697689974407	CMakeFiles/myHTTPServer_1_1.dir/main.cpp.o	9ba10b85c2ef364c
+15	2266	1658301697753972534	CMakeFiles/myHTTPServer_1_1.dir/uri/RequestData.cpp.o	18d7c9097ed8acd4
+20	2571	1658301698065963406	CMakeFiles/myHTTPServer_1_1.dir/ThreadPool.cpp.o	a9524311ac6251e0
+10	2579	1658301698077963055	CMakeFiles/myHTTPServer_1_1.dir/tools/Thread.cpp.o	67320c35f886ac25
+365	2724	1658301698221958842	CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogFile.cpp.o	3ef5a071f57b6573
+24	2748	1658301698245958140	CMakeFiles/myHTTPServer_1_1.dir/LogSystem/Logging.cpp.o	480fd4b50cb470be
+1758	2773	1658301698269957437	CMakeFiles/myHTTPServer_1_1.dir/LogSystem/FileUtil.cpp.o	266be1965a7cb68e
+3	3280	1658301698777942574	CMakeFiles/myHTTPServer_1_1.dir/Server.cpp.o	beab229abc636e
+1741	3693	1658301699189930520	CMakeFiles/myHTTPServer_1_1.dir/LogSystem/AsyncLogging.cpp.o	337d11e5e22b1ea
+11	1730	1658307377130993372	CMakeFiles/myHTTPServer_1_1.dir/uri/RequestData.cpp.o	18d7c9097ed8acd4
+15	1795	1658307377194990951	CMakeFiles/myHTTPServer_1_1.dir/ThreadPool.cpp.o	a9524311ac6251e0
+9	2373	1658307377774969010	CMakeFiles/myHTTPServer_1_1.dir/Server.cpp.o	beab229abc636e
+2373	2848	1658307378250951004	myHTTPServer_1_1	7707c15f3d29d893
