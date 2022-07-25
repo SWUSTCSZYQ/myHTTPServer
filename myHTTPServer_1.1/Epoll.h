@@ -8,10 +8,11 @@
 #include <sys/epoll.h>
 #include <memory>
 
-template <typename RequestData>
+
+template <typename RequestData_>
 class Epoll {
 public:
-    typedef std::shared_ptr<RequestData>SP_ReqData;
+    typedef std::shared_ptr<RequestData_>SP_ReqData;
 
 public:
     static Epoll* getInstance(int maxEvents = 5000, int listenNum = 1024);
@@ -36,26 +37,27 @@ private:
     int epollFd;
     const std::string PATH;
     int maxEvents_;
-};
-template<typename RequestData>
-Epoll<RequestData>* Epoll<RequestData>::instance = nullptr;
 
-template<typename RequestData>
-Epoll<RequestData> *Epoll<RequestData>::getInstance(int maxEvents, int listenNum) {
+};
+template<typename RequestData_>
+Epoll<RequestData_>* Epoll<RequestData_>::instance = nullptr;
+
+template<typename RequestData_>
+Epoll<RequestData_> *Epoll<RequestData_>::getInstance(int maxEvents, int listenNum) {
     if(instance == nullptr)
     {
-        instance = new Epoll<RequestData>(maxEvents, listenNum);
+        instance = new Epoll<RequestData_>(maxEvents, listenNum);
     }
     return instance;
 }
 
-template<typename RequestData>
-Epoll<RequestData>::~Epoll() {
+template<typename RequestData_>
+Epoll<RequestData_>::~Epoll() {
     delete instance;
 }
 
-template<typename RequestData>
-Epoll<RequestData>::Epoll(int maxEvents, int listenNum)
+template<typename RequestData_>
+Epoll<RequestData_>::Epoll(int maxEvents, int listenNum)
     :PATH("/"),
     epollFd(0),
     maxEvents_(maxEvents)
@@ -66,13 +68,13 @@ Epoll<RequestData>::Epoll(int maxEvents, int listenNum)
         event = new epoll_event[maxEvents];
 }
 
-template<typename RequestData>
-int Epoll<RequestData>::epoll_add(int fd, Epoll::SP_ReqData request, __uint32_t events) {
-    struct epoll_event event;
-    event.data.fd = fd;
-    event.events = events;
+template<typename RequestData_>
+int Epoll<RequestData_>::epoll_add(int fd, Epoll::SP_ReqData request, __uint32_t events) {
+    struct epoll_event event_;
+    event_.data.fd = fd;
+    event_.events = events;
     fd2req[fd] = request;
-    if(epoll_ctl(epollFd, EPOLL_CTL_ADD, fd, &event) < 0)
+    if(epoll_ctl(epollFd, EPOLL_CTL_ADD, fd, &event_) < 0)
     {
         perror("epoll_add error");
         return -1;
@@ -80,13 +82,13 @@ int Epoll<RequestData>::epoll_add(int fd, Epoll::SP_ReqData request, __uint32_t 
     return 0;
 }
 
-template<typename RequestData>
-int Epoll<RequestData>::epoll_mod(int fd, Epoll::SP_ReqData request, __uint32_t events) {
-    struct epoll_event event;
-    event.data.fd = fd;
-    event.events = events;
+template<typename RequestData_>
+int Epoll<RequestData_>::epoll_mod(int fd, Epoll::SP_ReqData request, __uint32_t events) {
+    struct epoll_event event_;
+    event_.data.fd = fd;
+    event_.events = events;
     fd2req[fd] = request;
-    if(epoll_ctl(epollFd, fd, EPOLL_CTL_MOD, &event) < 0)
+    if(epoll_ctl(epollFd, EPOLL_CTL_MOD, fd, &event_) < 0)
     {
         perror("epoll_mod error");
         fd2req[fd].reset();
@@ -95,12 +97,12 @@ int Epoll<RequestData>::epoll_mod(int fd, Epoll::SP_ReqData request, __uint32_t 
     return 0;
 }
 
-template<typename RequestData>
-int Epoll<RequestData>::epoll_del(int fd, __uint32_t events) {
-    struct epoll_event event;
-    event.data.fd = fd;
-    event.events = events;
-    if(epoll_ctl(epollFd, EPOLL_CTL_DEL, fd, &event) < 0)
+template<typename RequestData_>
+int Epoll<RequestData_>::epoll_del(int fd, __uint32_t events) {
+    struct epoll_event event_;
+    event_.data.fd = fd;
+    event_.events = events;
+    if(epoll_ctl(epollFd, EPOLL_CTL_DEL, fd, &event_) < 0)
     {
         perror("epoll_del error");
         return -1;
@@ -109,8 +111,8 @@ int Epoll<RequestData>::epoll_del(int fd, __uint32_t events) {
     return 0;
 }
 
-template<typename RequestData>
-int Epoll<RequestData>::epoll_wait(int listenFd, int timeout) {
+template<typename RequestData_>
+int Epoll<RequestData_>::epoll_wait(int listenFd, int timeout) {
     int eventCount = ::epoll_wait(epollFd, event, maxEvents_, timeout);
     if(eventCount < 0)
         perror("epoll wait error");

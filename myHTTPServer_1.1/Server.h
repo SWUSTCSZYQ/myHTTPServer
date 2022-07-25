@@ -9,8 +9,9 @@
 #include "Timer.h"
 #include <vector>
 #include <memory>
+#include "RequestData.h"
 
-class RequestData;
+
 class Server {
 public:
     typedef std::shared_ptr<RequestData>SP_ReqData;

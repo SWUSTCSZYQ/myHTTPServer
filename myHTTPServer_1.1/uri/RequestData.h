@@ -10,6 +10,7 @@
 #include <memory>
 #include <unordered_map>
 #include "../Timer.h"
+#include "../Epoll.h"
 
 
 const int STATE_PARSE_URI = 1;
@@ -103,7 +104,8 @@ private:
 
     bool isAbleRead;
     bool isAbleWrite;
-
+    Epoll<RequestData>* epollInstance;
+    TimerManager<RequestData>*timerManagerInstance;
 };
 
 

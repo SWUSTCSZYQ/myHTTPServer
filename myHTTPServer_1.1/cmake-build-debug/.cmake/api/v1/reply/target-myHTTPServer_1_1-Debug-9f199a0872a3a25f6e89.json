@@ -61,6 +61,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/zyq/CLionProjects/myHTTPServer_1.1/router"
 				}
 			],
 			"language" : "CXX",
@@ -87,7 +91,11 @@
 				22,
 				24,
 				26,
-				28
+				28,
+				30,
+				32,
+				34,
+				36
 			]
 		}
 	],
@@ -133,7 +141,11 @@
 				22,
 				24,
 				26,
-				28
+				28,
+				30,
+				32,
+				34,
+				36
 			]
 		},
 		{
@@ -155,7 +167,11 @@
 				23,
 				25,
 				27,
-				29
+				29,
+				31,
+				33,
+				35,
+				37
 			]
 		}
 	],
@@ -323,6 +339,50 @@
 		{
 			"backtrace" : 1,
 			"path" : "LogSystem/FileUtil.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "router/Trie.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "router/Trie.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "router/Router.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "router/Router.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "router/Context.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "router/Context.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "router/RouterNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "router/RouterNode.h",
 			"sourceGroupIndex" : 1
 		}
 	],

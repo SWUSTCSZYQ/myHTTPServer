@@ -66,7 +66,7 @@ Server::Server(int port)
     :port_(port),
     listenFd(0),
     epoll(nullptr),
-    timerManager(new TimerManager<RequestData>()),
+    timerManager(TimerManager<RequestData>::getInstance()),
     timeout_(500)
 {
     handle_for_sigpipe();

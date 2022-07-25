@@ -75,100 +75,128 @@ build cmake_object_order_depends_target_myHTTPServer_1_1: phony || CMakeFiles/my
 build CMakeFiles/myHTTPServer_1_1.dir/main.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/main.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/main.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir
 
 build CMakeFiles/myHTTPServer_1_1.dir/Server.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/Server.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/Server.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir
 
 build CMakeFiles/myHTTPServer_1_1.dir/Epoll.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/Epoll.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/Epoll.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir
 
 build CMakeFiles/myHTTPServer_1_1.dir/Timer.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/Timer.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/Timer.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir
 
 build CMakeFiles/myHTTPServer_1_1.dir/tools/CountDownLatch.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/tools/CountDownLatch.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/tools/CountDownLatch.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/tools
 
 build CMakeFiles/myHTTPServer_1_1.dir/tools/Thread.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/tools/Thread.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/tools/Thread.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/tools
 
 build CMakeFiles/myHTTPServer_1_1.dir/uri/RequestData.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/uri/RequestData.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/uri/RequestData.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/uri
 
 build CMakeFiles/myHTTPServer_1_1.dir/utils.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/utils.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/utils.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir
 
 build CMakeFiles/myHTTPServer_1_1.dir/ThreadPool.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/ThreadPool.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/ThreadPool.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir
 
 build CMakeFiles/myHTTPServer_1_1.dir/LogSystem/Logging.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem/Logging.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/LogSystem/Logging.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/LogSystem
 
 build CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogStream.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem/LogStream.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogStream.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/LogSystem
 
 build CMakeFiles/myHTTPServer_1_1.dir/LogSystem/AsyncLogging.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem/AsyncLogging.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/LogSystem/AsyncLogging.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/LogSystem
 
 build CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogFile.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem/LogFile.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogFile.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/LogSystem
 
 build CMakeFiles/myHTTPServer_1_1.dir/LogSystem/FileUtil.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem/FileUtil.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
   DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/LogSystem/FileUtil.cpp.o.d
   FLAGS = -pthread -g -std=gnu++2a
-  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/LogSystem
+
+build CMakeFiles/myHTTPServer_1_1.dir/router/Trie.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/router/Trie.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
+  DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/router/Trie.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++2a
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
+  OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/router
+
+build CMakeFiles/myHTTPServer_1_1.dir/router/Router.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/router/Router.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
+  DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/router/Router.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++2a
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
+  OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/router
+
+build CMakeFiles/myHTTPServer_1_1.dir/router/Context.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/router/Context.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
+  DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/router/Context.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++2a
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
+  OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/router
+
+build CMakeFiles/myHTTPServer_1_1.dir/router/RouterNode.cpp.o: CXX_COMPILER__myHTTPServer_1_1_Debug /home/zyq/CLionProjects/myHTTPServer_1.1/router/RouterNode.cpp || cmake_object_order_depends_target_myHTTPServer_1_1
+  DEP_FILE = CMakeFiles/myHTTPServer_1_1.dir/router/RouterNode.cpp.o.d
+  FLAGS = -pthread -g -std=gnu++2a
+  INCLUDES = -I/home/zyq/CLionProjects/myHTTPServer_1.1/tools -I/home/zyq/CLionProjects/myHTTPServer_1.1/uri -I/home/zyq/CLionProjects/myHTTPServer_1.1/LogSystem -I/home/zyq/CLionProjects/myHTTPServer_1.1/router
+  OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/myHTTPServer_1_1.dir/router
 
 
 # =============================================================================
@@ -178,7 +206,7 @@ build CMakeFiles/myHTTPServer_1_1.dir/LogSystem/FileUtil.cpp.o: CXX_COMPILER__my
 #############################################
 # Link the executable myHTTPServer_1_1
 
-build myHTTPServer_1_1: CXX_EXECUTABLE_LINKER__myHTTPServer_1_1_Debug CMakeFiles/myHTTPServer_1_1.dir/main.cpp.o CMakeFiles/myHTTPServer_1_1.dir/Server.cpp.o CMakeFiles/myHTTPServer_1_1.dir/Epoll.cpp.o CMakeFiles/myHTTPServer_1_1.dir/Timer.cpp.o CMakeFiles/myHTTPServer_1_1.dir/tools/CountDownLatch.cpp.o CMakeFiles/myHTTPServer_1_1.dir/tools/Thread.cpp.o CMakeFiles/myHTTPServer_1_1.dir/uri/RequestData.cpp.o CMakeFiles/myHTTPServer_1_1.dir/utils.cpp.o CMakeFiles/myHTTPServer_1_1.dir/ThreadPool.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/Logging.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogStream.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/AsyncLogging.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogFile.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/FileUtil.cpp.o
+build myHTTPServer_1_1: CXX_EXECUTABLE_LINKER__myHTTPServer_1_1_Debug CMakeFiles/myHTTPServer_1_1.dir/main.cpp.o CMakeFiles/myHTTPServer_1_1.dir/Server.cpp.o CMakeFiles/myHTTPServer_1_1.dir/Epoll.cpp.o CMakeFiles/myHTTPServer_1_1.dir/Timer.cpp.o CMakeFiles/myHTTPServer_1_1.dir/tools/CountDownLatch.cpp.o CMakeFiles/myHTTPServer_1_1.dir/tools/Thread.cpp.o CMakeFiles/myHTTPServer_1_1.dir/uri/RequestData.cpp.o CMakeFiles/myHTTPServer_1_1.dir/utils.cpp.o CMakeFiles/myHTTPServer_1_1.dir/ThreadPool.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/Logging.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogStream.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/AsyncLogging.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/LogFile.cpp.o CMakeFiles/myHTTPServer_1_1.dir/LogSystem/FileUtil.cpp.o CMakeFiles/myHTTPServer_1_1.dir/router/Trie.cpp.o CMakeFiles/myHTTPServer_1_1.dir/router/Router.cpp.o CMakeFiles/myHTTPServer_1_1.dir/router/Context.cpp.o CMakeFiles/myHTTPServer_1_1.dir/router/RouterNode.cpp.o
   FLAGS = -pthread -g
   OBJECT_DIR = CMakeFiles/myHTTPServer_1_1.dir
   POST_BUILD = :
